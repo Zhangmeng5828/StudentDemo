@@ -1,0 +1,38 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+
+
+
+class Animal {
+public:void eat()
+public:void sleep()
+}
+
+class Dog {
+public:void 看家()
+}
+
+class Cat {
+public:void 抓老鼠()
+}
+
+class 布偶猫{
+}
+class 中国狸花猫{
+}
+
+class 哈士奇{
+private:void 拆家()
+}
+
+class 泰迪{
+private:void 蹭一蹭()
+}
+Animal <|- Dog
+Animal <|- Cat
+Cat <|- 布偶猫
+Cat <|- 中国狸花猫
+Dog <|- 哈士奇
+Dog <|- 泰迪
+@enduml
